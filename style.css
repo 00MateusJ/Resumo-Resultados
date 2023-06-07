@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    font-family: "Hanken Grotesk", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 35%;
+    height: 50vh;
+    position: absolute;
+    top: 25vh;
+    border-radius: 1.5vw;
+}
+
+section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+img {
+    width: 15px;
+}
+
+
+.resultado {
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 1.5vw;
+
+}
+
+
+.resumo {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1.5vw;
+}
+
+
+.box-resultado {
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    gap: 1em;
+
+}
+
+.circle {
+    width: 10vw;
+    height: 20vh;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+
+}
+
+.number {
+    color: hsl(0, 0%, 100%);
+    font-weight: 800;
+    font-size: 50px;
+}
+
+
+.box-resumo {
+    padding: 1.7em;
+    gap: 1em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+h3 {
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+
+#titulo-um {
+    color: hsla(0, 0%, 100%, 0.5);
+    margin-top: -.9em;
+    font-size: 16px;
+}
+
+#titulo-dois {
+    font-size: 16px;
+    margin-top: -.9em;
+}
+
+.qualitativa {
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.circle p {
+    color: hsla(0, 0%, 100%, 0.5);
+
+}
+
+.box-resultado p {
+    color: hsla(0, 0%, 100%, 0.5);
+    font-size: 12px;
+    display: flex;
+    text-align: center;
+    margin-top: -0.75em;
+}
+
+
+.cartas {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .7em;
+}
+
+.cartas p {
+    font-size: 13px;
+}
+
+.carta-reacao {
+    background-color: hsla(0, 100%, 67%, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7em .5em;
+    border-radius: .5em;
+
+
+}
+
+
+.carta-memoria {
+    background-color: hsla(39, 100%, 56%, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7em;
+    border-radius: .5em;
+
+}
+
+
+.carta-verbal {
+    background-color: hsla(166, 100%, 37%, .1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7em;
+    border-radius: .5em;
+}
+
+
+.carta-visual {
+    background-color: hsla(234, 85%, 45%, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7em;
+    border-radius: .5em;
+}
+
+
+.sessao-reacao {
+    color: hsl(0, 100%, 67%);
+    display: flex;
+    gap: .4em;
+}
+
+
+.sessao-memoria {
+    color: hsl(39, 100%, 56%);
+    display: flex;
+    gap: .4em;
+}
+
+.sessao-verbal {
+    color: hsl(166, 100%, 37%);
+    display: flex;
+    gap: .4em;
+}
+
+.sessao-visual {
+    color: hsl(234, 85%, 45%);
+    display: flex;
+    gap: .4em;
+}
+
+
+button {
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-size: 12px;
+    width: 100%;
+    padding: .7em;
+    border-radius: 1.5em;
+    border: none;
+    margin-top: .5em;
+}
+
+
+button:hover {
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+
+
+
+@media screen and (max-width: 375px) {
+
+    main {
+        width: 375px;
+        height: 1125px;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+    }
+
+    section {
+        width: 100%;
+    }
+
+
+    .resultado {
+        width: 65%;
+        height: 25%;
+        border-radius: 0 0 25px 25px;
+    }
+
+    .resumo {
+        width: 65%;
+
+    }
+
+
+    .box-resultado {
+        height: 50%;
+        border: none;
+    }
+
+
+    .circle {
+        width: 50%;
+        padding: .5em;
+    }
+
+
+    .number {
+        font-size: 40px;
+    }
+
+    .cartas {
+        font-size: 10px;
+        ;
+    }
+
+    .cartas p {
+        font-size: 10px;
+    }
+}
